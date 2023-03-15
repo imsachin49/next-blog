@@ -3,18 +3,23 @@
 
 BlogHub is a all in One blog website built using Next.js, GraphQL, and GraphCMS. The website provides insightful articles and resources for developers, entrepreneurs, business owners, and professionals in the marketing and sales industry.  
 
-#### Features
+## Features
 
 
-Modern and professional design.  
-Efficient and flexible data fetching using GraphQL.  
-Clean and easy-to-navigate layout.  
-Responsive design for mobile and desktop.  
-Social sharing buttons for easy content sharing.   
-Newsletter subscription button for email updates.  
+•Modern and professional design.  
+
+•Efficient and flexible data fetching using GraphQL.  
+
+•Clean and easy-to-navigate layout.  
+
+•Responsive design for mobile and desktop.  
+
+•Social sharing buttons for easy content sharing.   
+
+•Newsletter subscription button for email updates.  
 
 
-#### Getting Started
+## Getting Started
 
 
 To run the blog website locally, follow these steps:
