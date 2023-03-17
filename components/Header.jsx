@@ -1,14 +1,18 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import Link from 'next/link'
-
-const categories = [
-  { name: 'Flutter', slug: 'flutter' },
-  { name: 'React', slug: 'react' },
-  { name: 'Next', slug: 'next' },
-  { name: 'JavaScript', slug: 'javascript' },
-]
+import {getCategories} from '../services'
 
 const Header = () => {
+  const [categories,setCategories] = useState([]);
+  
+  useEffect(() => {
+    const fetchCategories = async () => {
+      const categories = await getCategories();
+      setCategories(categories);
+    }
+    fetchCategories();
+  },[])
+
   return (
     <div className='conatiner mx-auto px-8 mb-8'>
       <div className='border-b w-full inline-block border-blue-400 py-8'>

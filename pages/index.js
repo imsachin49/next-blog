@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import { PostCard,PostWidgets,Categories } from '../components'
 import { getPosts } from '../services'
-
+// import {FeaturedPosts} from '../sections'
 
 export default function Home({posts}) {
   return (
@@ -16,6 +16,7 @@ export default function Home({posts}) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      {/* <FeaturedPosts /> */}
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-8 col-span-1">
@@ -35,7 +36,6 @@ export default function Home({posts}) {
     </div>
   )
 }
-
 
 export async function getStaticProps() {
   const posts=(await getPosts() ) || [];
