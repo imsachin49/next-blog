@@ -1,13 +1,14 @@
 import React from 'react'
 import moment from 'moment'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const postCard = ({post}) => {
   return (
     <div className='bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8 drop-shadow-2xl'>
       
       <div className='relative overflow-hidden shadow-mb pb-60 mb-4 pt-2 border-solid border-2  border-gray-100 rounded-lg '>
-        <img 
+        <img
           src={post.featuredImage.url}
           alt={post.title}
           className='object-top absolute h-60 w-full object-contain max-h-fit pb-1 mb-1 shadow-lg rounded-t-lg lg:rounded-lg'

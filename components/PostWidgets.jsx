@@ -27,7 +27,7 @@ const postWidgets = ({categories,slug}) => {
         realtedPost.map((post)=>{
             return(<div className='flex items-center w-full border m-1 rounded-lg border-gray-100'>
               <div className='w-16 flex-none m-2'>
-                <img 
+                <img
                   alt={post.title}
                   height='60px'
                   width='60px'
